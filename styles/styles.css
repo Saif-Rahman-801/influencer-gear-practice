@@ -1,0 +1,53 @@
+/* shared style */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.div-center {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px; /* 134.615% */
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* header styles */
+.nav-title {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-link{
+    display: flex;
+    gap: 2rem;
+}
