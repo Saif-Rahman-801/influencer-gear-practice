@@ -5,7 +5,22 @@
   padding: 0;
 }
 
-.div-center {
+.banner-desc {
+  color: #3a3a3a;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.btn-shared {
+  border: none;
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container {
   width: 80%;
   margin: 50px auto;
 }
@@ -41,13 +56,47 @@ li a {
   font-weight: 600;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li-link {
+  display: flex;
+  gap: 2rem;
+}
+/* banner */
+.banner-image{
+    background-image: url("../images/Circle\ design.svg");
+}
+
 .banner-container{
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.li-link{
-    display: flex;
-    gap: 2rem;
+/* responsive media quaries */
+
+@media screen and (max-width: 576px) {
+    .nav-container, .li-link{
+        flex-direction: column;
+    }
+    li{
+        margin-top: 10px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+   .banner-container{
+    flex-direction: column;
+   }
 }
