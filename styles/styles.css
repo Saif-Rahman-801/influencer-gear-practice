@@ -78,6 +78,23 @@ li a {
     align-items: center;
 }
 
+/* main section styles */
+main{
+    margin-top: 100px;
+}
+
+.customer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-top:1px solid #3a3a3a18;
+    border-bottom:1px solid #3a3a3a18;
+}
+
+
+
+
 /* responsive media quaries */
 
 @media screen and (max-width: 576px) {
@@ -91,6 +108,13 @@ li a {
         flex-direction: column-reverse;
         gap: 1.5rem;
         text-align: center;
+    }
+    .customer-container{
+        width: 40%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 40px;
     }
 }
 
